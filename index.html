@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorrido de Luciérnagas</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+   <!-- ============================= -->
+<!-- CALENDARIO PROFESIONAL -->
+<!-- ============================= -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+ <div id="inicio"></div>
+
+<header class="header">
+
+    <div class="menu-overlay"></div>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img 
+            src="img/Lumara.png" 
+            alt="Lumara"
+            class="logo-header"
+        >
+    </div>
+
+    <!-- MENÚ -->
+     
+    <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#informacion">Luciérnagas</a>
+         <a href="#servicios-amenidades">Servicios</a>
+        <a href="#hospedaje">Hospedaje</a>       
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- BOTÓN WHATSAPP (SOLO DESKTOP) -->
+    <a href="https://wa.me/5212482501061"
+   class="btn-whatsapp"
+   target="_blank"
+   aria-label="WhatsApp">
+
+    <i class="fab fa-whatsapp"></i>
+    <span class="btn-text">WhatsApp</span>
+
+</a>
+</header>
+
+<!-- HERO -->
+<section class="hero-pro">
+    <div class="hero-content">
+        <span class="hero-eyebrow">Experiencia Natural</span>
+        <h1>Recorrido de<br>Luciérnagas</h1>
+        <p>
+            Vive una experiencia única en el bosque,
+            rodeado de naturaleza, tranquilidad y luz natural.
+        </p>
+        <a href="#servicios" class="btn-hero">Ver paquetes</a>
+    </div>
+
+    <div class="hero-image" id="heroCarousel">
+    <div class="hero-img img1"></div>
+    <div class="hero-img img2"></div>
+    </div>
+
+</section>
+
+
+<!-- ===============================
+     GALERÍA EXPERIENCIAS
+================================ -->
+<section class="gallery">
+
+    <div class="gallery-track">
+
+        <!-- ITEM 1 -->
+        <div class="gallery-item">
+
+            <!-- IMAGEN -->
+            <div class="img-box">
+                <img src="img/aguamiel.jpg" alt="Luciernagas">
+            </div>
+
+            <!-- CARD TEXTO -->
+            <div class="text-card">
+                <h3>Agua miel </h3>
+                <p>
+                    En Nanacamilpa recorre con nosotros el sendero del 
+                    maguey y disfruta la experiencia de probar la auténtica agua miel, una tradición ancestral.
+                </p>
+                <span class="arrow">→</span>
+            </div>
+
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="gallery-item">
+            <div class="img-box">
+                <img src="img/pulque.jpg" alt="Camping">
+            </div>
+
+            <div class="text-card">
+                <h3>Pulque Artesanal</h3>
+                <p>
+                    El pulque de Nanacamilpa es reconocido como uno de los mejores de toda la región.<p>
+Ven y disfruta de su proceso artesanal, elaborado con tradición, paciencia y el auténtico sabor del maguey.
+¡Descubre una bebida ancestral llena de historia y cultura!.</p>
+                </p>
+                <span class="arrow">→</span>
+            </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="gallery-item">
+            <div class="img-box">
+                <img src="img/monte.jpg" alt="Hongos">
+            </div>
+
+            <div class="text-card">
+                <h3>Actividades en el bosque</h3>
+                <p>
+                   Ven y vive la aventura: haz senderismo con nosotros, respira aire puro y escucha las historias de
+                 la naturaleza. Disfruta de una experiencia llena de tranquilidad, cultura y muchas actividades más..
+                </p>
+                <span class="arrow">→</span>
+            </div>
+        </div>
+
+           <!-- ITEM 4 -->
+        <div class="gallery-item">
+            <div class="img-box">
+                <img src="img/cabañas.jpg" alt="Camping">
+            </div>
+
+            <div class="text-card">
+                <h3>Camping nocturno</h3>
+                <p>
+                    Disfruta la experiencia de acampar en medio del bosque,
+                 bajo un cielo lleno de estrellas, alrededor de una fogata y rodeado de naturaleza.
+                </p>
+                <span class="arrow">→</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===============================
+     SECCIÓN INFORMACIÓN CON GALERÍA
+================================ -->
+<div  id="informacion" class="informacion">
+    <section class="info-section">
+
+        <div class="info-content">
+
+            <!-- Cuadro imagen grande + miniaturas abajo -->
+            <div class="info-image-gallery">
+
+                <!-- Imagen grande -->
+                <div class="info-image">
+                    <img id="mainImage" src="img/aguamiel.jpg" alt="Imagen grande del Santuario">
+                </div>
+
+                <!-- Imágenes pequeñas -->
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="img/aguamiel.jpg" alt="Miniatura 1">
+                    <img class="thumbnail" src="img/pulque.jpg" alt="Miniatura 2">
+                    <img class="thumbnail" src="img/monte.jpg" alt="Miniatura 3">
+                    <img class="thumbnail" src="img/cabañas.jpg" alt="Miniatura 4">
+                </div>
+            </div>
+
+            <!-- Texto a la derecha -->
+            <div class="info-text-content">
+                <h2 class="info-title">
+                     Santuario de las Luciérnagas en Nanacamilpa
+                </h2>
+
+                <p class="info-intro">
+                    Bienvenidos al bosque de Nanacamilpa, Tlaxcala.
+                </p>
+
+                <p class="info-text">
+                    En <strong>Lumara</strong> cuidamos y protegemos este hábitat. 
+                    razón por la cual hemos sido reconocidos como <strong>Santuario.</strong>
+                    Este compromiso nos ha posicionado como un destino que recibe a viajeros
+                    de todo el mundo que comparten el amor por la naturaleza.
+                </p>
+
+                <p class="info-text">
+                    Disfruta del <strong>avistamiento de luciérnagas</strong> en compañía de nuestros guías expertos, 
+                    quienes te orientarán y te explicarán este <strong>fascinante fenómeno natural</strong> para que vivas
+                    una <strong>experiencia segura y completa.</strong>
+                    Haz de tu visita algo aún más especial con nuestro <strong>hospedaje y actividades</strong> 
+                    que ofrecemos dentro del bosque.
+                </p>
+
+                <p class="info-text">
+                    Ven y disfruta de este maravilloso evento natural con <strong>camping cuidadosamente
+                    preparado</strong>  y caminatas diseñadas para elevar tu experiencia en el bosque.
+                </p>
+                
+                <p class="info-cta">
+                    <strong>¡Asegura tu lugar y déjate maravillar por 
+                        el fascinante espectáculo de las luciérnagas! </strong>
+                </p>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+<!-- ===============================
+     SECCIÓN UBICACIÓN Y TEMPORADA CON BENEFICIOS VISUALES FLOTANTES
+================================ -->
+<section id="ubicacion-temporada" class="ubicacion-temporada">
+
+    <div class="container">
+
+        <div class="split-content">
+
+            <div class="left-section">
+                <h2>Temporada oficial de avistamiento de Luciérnagas 2026</h2>
+                
+                <!-- Bloque destacado -->
+                <div class="highlight-block">
+                    <p>
+                        En <strong>Lumara</strong> te recibimos todo el año, pero la magia de las luciérnagas solo ocurre en temporada. 
+                        Para 2026, podrás disfrutarla del <strong>12 de junio al 16 de agosto</strong>, coincidiendo con su ciclo natural de reproducción.
+                    </p>
+                    <p>
+                        Aprovecha esta oportunidad única de vivir el santuario en su máximo esplendor.
+                    </p>
+                </div>
+
+                <!-- Lista de beneficios con íconos flotantes -->
+                <div class="benefits-list floating-benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon-circle">📅</div>
+                        <p>Reserva hoy con el 40% y liquida al llegar</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon-circle">💰</div>
+                        <p>¡Ahorra 20% entre semana! (Lunes a Jueves)</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon-circle">👥</div>
+                        <p>Precios especiales para grupos</p>
+                    </div>
+                </div>
+
+                <p>
+                    Te recomendamos aprovechar la temporada para vivir la experiencia única que ofrece este santuario.
+                </p>
+            </div>
+
+            <div class="right-section">
+                <h2>Ubicación de reunión al Santuario de las Luciérnagas</h2>
+                <p>
+                    En lo profundo del bosque de Nanacamilpa, Tlaxcala, se encuentra un refugio secreto <strong>donde
+                     la quietud y la oscuridad se combinan para revelar uno de los fenómenos más 
+                     delicados de la naturaleza.  </p>
+                <p>
+                   Aquí, la noche cobra vida: los destellos de las <strong>luciérnagas iluminan</strong> suavemente la oscuridad, como pequeñas luciérnagas de luz suspendidas en el tiempo, 
+                   creando un espectáculo que despierta asombro, llegar
+                     es sencillo, el bosque te envuelve en su <strong>magia silenciosa.</strong>
+                </p>
+
+                 
+                <div class="mapa-santuario animado">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.3084702255454!2d-98.5394986974708!3d19.488570988115114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1d32d5abf8e3d%3A0x6b8e53c00f613ea7!2sTin%20marin%20toys!5e0!3m2!1ses-419!2smx!4v1770781543726!5m2!1ses-419!2smx"
+                        allowfullscreen
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        aria-label="Mapa Tin Marin Toys"
+                    ></iframe>
+
+                    <a
+                        href="https://www.google.com/maps/place/Tin+marin+toys/"
+                        target="_blank"
+                        class="btn-mapa-flotante"
+                        aria-label="Abrir ubicación en Google Maps"
+                    >
+                        Cómo llegar
+                    </a>
+
+                </div>
+                    <p>
+                  
+                      <strong>Calle Prolongacion libertad S/N Barrio
+                         de Francisco Villa, Nanacamilpa Tlax.</strong>
+                    </p>
+
+            </div>           
+
+        </div>
+    </div>
+</section>
+
+<!-- ===============================
+     SECCIÓN SERVICIOS Y AMENIDADES
+================================ -->
+<section id="servicios-amenidades" class="servicios-amenidades">
+
+    <div class="container">
+
+        <!-- Título de la sección -->
+        <div class="section-header">
+            <h2>Tenemos todo lo necesario para tu estancia</h2>
+            <p>
+                Disfruta de comodidad, diversión y seguridad en un entorno natural 
+                diseñado para toda la familia.
+            </p>
+        </div>
+
+        <!-- Lista de servicios -->
+        <div class="servicios-grid">
+
+            <!-- Servicio 1 -->
+            <div class="servicio-item">
+                <div class="servicio-icon">🍽️</div>
+                <h3>Comida Tradicional</h3>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="servicio-item">
+                <div class="servicio-icon">🚗</div>
+                <h3>Estacionamiento</h3>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="servicio-item">
+                <div class="servicio-icon">🚽</div>
+                <h3>Baños</h3>
+            </div>
+
+            <!-- Servicio 4 -->
+            <div class="servicio-item">
+                <div class="servicio-icon">🔥</div>
+                <h3>Zona de Fogatas</h3>
+            </div>
+
+            <!-- Servicio 5 -->
+            <div class="servicio-item">
+                <div class="servicio-icon">🌳</div>
+                <h3>Campamento</h3>
+            </div>
+
+            <!-- Servicio 6 -->
+            <div class="servicio-item">
+                <div class="servicio-icon">⚽</div>
+                <h3>Áreas recreativas</h3>
+            </div>
+
+            <!-- Servicio 7 -->
+            <div class="servicio-item">
+                <div class="servicio-icon">🛤️</div>
+                <h3>Senderismo</h3>
+            </div>
+
+            <!-- Servicio 8 -->
+            <div class="servicio-item">
+                <div class="servicio-icon">🗺️</div>
+                <h3>Recorrido Historico</h3>
+            </div>
+
+            <!-- Servicio 9 -->
+            <div class="servicio-item">
+                <div class="servicio-icon">🖼️</div>
+                <h3>Museos</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===============================
+     PAQUETES PREMIUM
+================================ -->
+
+<section id="servicios" class="packages">
+   <h2 class="titulo-paquetes">
+    Paquetes Disponibles 
+    <span class="resalte-luci">Luciérnagas 2026</span>
+</h2>
+
+
+    <div class="cards">
+
+        <!-- 🥉 BRONCE -->
+        <div class="card bronze">
+            <div class="card-title">Bronce</div>
+            <h3>$380 <span>/ por persona</span></h3>
+
+            <ul>
+                <li>✨ Entrada general al avistamiento de luciérnagas</li>
+                <li>🍞 Pan regional y bebida caliente</li>
+                <li>🧭 Guía certificado y/o monitor</li>
+                <li>🚻 Baños</li>
+                <li>🅿️ Estacionamiento</li>
+                <li>🎁 Suvenir (recuerdo por tu visita)</li>
+            </ul>
+
+           <button class="btn-reservar" data-paquete="Bronce">Reservar</button>
+        </div>
+
+        <!-- 🥈 PLATA -->
+        <div class="card silver popular">
+            <span class="badge">Más Popular</span>
+            <div class="card-title">Plata</div>
+            <h3>$430 <span>/ por persona</span></h3>
+
+            <ul>
+                <li>✨ Entrada general al avistamiento de luciérnagas</li>
+                <li>🍽️ Comida regional</li>
+                <li>🍞 Pan regional y bebida caliente</li>
+                <li>🧭 Guía certificado y/o monitor</li>
+                <li>🚻 Baños</li>
+                <li>🅿️ Estacionamiento</li>
+                <li>📖 Historias y leyendas durante el recorrido</li>
+                <li>🌿 Ruta del maguey y proceso ancestral del pulque</li>
+                <li>🎁 Suvenir (recuerdo por tu visita)</li>
+            </ul>
+
+           <button class="btn-reservar" data-paquete="Plata">Reservar</button>
+        </div>
+
+        <!-- 🥇 ORO -->
+        <div class="card gold">
+            <div class="card-title">Oro</div>
+            <h3>$730 <span>/ por persona</span></h3>
+
+           <ul>
+                <li>✨ Incluye todo el paquete Plata</li>
+                <li>🔥 Experiencia nocturna en fogata</li>
+                <li>🍶 Degustación de pulque artesanal</li>
+                <li>🏕️ Área de camping</li>
+                <li>🏛️ Museo de la Luciérnaga</li>
+                <li>🐝 Museo de la Abeja</li>
+                <li>🏛️ Recorrido histórico por Nanacamilpa</li>
+                <li>🧶 Museo de los Artesanos</li>
+                <li>🛠️ Taller artesanal</li>
+                <li>🎁 Suvenir premium</li>
+            </ul>
+
+            <button class="btn-reservar" data-paquete="Oro">Reservar</button>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ============================= -->
+<!-- MODAL DE RESERVA -->
+<!-- ============================= -->
+
+<div id="modalReserva" class="modal">
+
+    <div class="modal-contenido">
+
+        <!-- BOTÓN CERRAR -->
+        <span class="cerrar">&times;</span>
+
+        <!-- TÍTULO -->
+        <h2>Reserva tu experiencia</h2>
+
+        <!-- FECHA -->
+        <label>Fecha de visita</label>
+        <input type="text" id="fechaReserva" placeholder="Selecciona una fecha" readonly>
+
+        <!-- PERSONAS -->
+        <label>Número de personas</label>
+        <input type="number" id="personasReserva" min="1" max="20" value="1">
+
+        <!-- BOTÓN -->
+        <button id="confirmarReserva">Enviar reserva</button>
+
+    </div>
+
+</div>
+
+
+
+<!-- HOSPEDAJE -->
+<!-- ===================================== -->
+<!-- SECCIÓN HOSPEDAJE -->
+<!-- ===================================== -->
+
+<section id="hospedaje" class="hospedaje-section">
+
+<h2 class="section-title">Hospedaje en el Santuario</h2>
+
+<div class="hospedaje-grid">
+
+    <!-- CABAÑAS -->
+    <div class="hospedaje-card">
+
+    <!-- IMAGEN -->
+    <div class="hospedaje-img">
+        <img src="img/cabaña.jpg" alt="Zona de camping en el bosque">
+    </div>
+
+    <!-- LINEA SEPARADORA -->
+    <div class="linea-bioluminiscente"></div>
+
+    <!-- INFORMACIÓN -->
+    <div class="hospedaje-info">
+
+            <h3>Cuartos de Hospedaje</h3>
+
+    <p>
+        Hospédate en nuestros cómodos cuartos ubicados en las afueras del pueblo, 
+        en un ambiente tranquilo ideal para descansar después de tu experiencia 
+        en el santuario de luciérnagas.
+    </p>
+
+    <ul>
+        <li>🛏️ Camas cómodas</li>
+        <li>🛋️ Sala de estar</li>
+        <li>📺 Televisión</li>
+        <li>📶 Internet WiFi</li>
+        <li>🚿 Baño privado</li>
+        <li>🔥 Agua caliente 24/7</li>
+    </ul>
+
+    <button class="btn-reservar" data-paquete="Hospedaje Cuartos">
+        Reservar hospedaje
+    </button>
+
+</div>
+
+    </div>
+
+
+    <!-- ============================= -->
+<!-- CAMPING -->
+<!-- ============================= -->
+
+<div class="hospedaje-card">
+
+    <!-- IMAGEN -->
+    <div class="hospedaje-img">
+        <img src="img/camping.jpg" alt="Zona de camping en el bosque">
+    </div>
+
+    <!-- LINEA SEPARADORA -->
+    <div class="linea-bioluminiscente"></div>
+
+    <!-- INFORMACIÓN -->
+    <div class="hospedaje-info">
+
+        <h3>Zona de Camping</h3>
+
+        <p>
+            Vive una experiencia única acampando bajo las estrellas en plena naturaleza. 
+            Disfruta de una noche tranquila rodeado de bosque, fogata y el ambiente mágico 
+            del santuario de luciérnagas.
+        </p>
+
+        <ul>
+            <li>🏕️ Área segura para acampar</li>
+            <li>🔥 Zona de fogata nocturna</li>
+            <li>🚻 Sanitarios cercanos</li>
+            <li>🌌 Cielo estrellado y aire puro</li>
+            <li>🌲 Ambiente natural y tranquilo</li>
+        </ul>
+
+        <button class="btn-reservar" data-paquete="Camping">
+            Reservar camping
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===================================== -->
+<!-- AYUDA PARA RESERVACIÓN -->
+<!-- ===================================== -->
+
+<section class="ayuda-reserva">
+
+    <div class="ayuda-container">
+
+        <h2>¿Necesitas ayuda con tu reservación?</h2>
+
+        <a href="https://wa.me/5212482501061"
+           target="_blank"
+           class="btn-ayuda-whatsapp">
+
+            <i class="fab fa-whatsapp"></i>
+            Envíanos un mensaje
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- SECCIÓN CONTACTO -->
+<!-- ===================================== -->
+
+<section id="contacto" class="contacto-section">
+    <!-- ===================================== -->
+<!-- PREGUNTAS FRECUENTES -->
+<!-- ===================================== -->
+
+<section class="faq-section">
+
+<h2 class="section-title">Preguntas Frecuentes</h2>
+
+<div class="faq-container">
+
+    <!-- PREGUNTA 1 -->
+    <div class="faq-item">
+
+        <button class="faq-question">
+            ¿A qué hora inicia el recorrido?
+            <span class="faq-icon">+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Los recorridos comienzan a partir de las 18:30 hrs y terminan alrededor de las 22:30 hrs.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- PREGUNTA 2 -->
+    <div class="faq-item">
+
+        <button class="faq-question">
+            ¿Pueden asistir niños?
+            <span class="faq-icon">+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Sí, es una experiencia familiar. Recomendamos que los niños siempre estén acompañados por un adulto.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- PREGUNTA 3 -->
+    <div class="faq-item">
+
+        <button class="faq-question">
+            ¿Se permite tomar fotografías?
+            <span class="faq-icon">+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                No se permite el uso de flash para proteger a las luciérnagas, pero puedes tomar fotografías sin flash.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- PREGUNTA 4 -->
+    <div class="faq-item">
+
+        <button class="faq-question">
+            ¿Hay estacionamiento?
+            <span class="faq-icon">+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Sí, contamos con área de estacionamiento para los visitantes del santuario.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<h2 class="section-title">Contáctanos</h2>
+
+<div class="contacto-grid">
+
+    <!-- UBICACIÓN -->
+    <div class="contacto-card">
+        <i class="fas fa-map-marker-alt contacto-icon"></i>
+        <h3>Ubicación</h3>
+        <p>
+            Santuario de las Luciérnagas<br>
+            Nanacamilpa, Tlaxcala
+        </p>
+    </div>
+
+    <!-- HORARIOS -->
+    <div class="contacto-card">
+        <i class="fas fa-clock contacto-icon"></i>
+        <h3>Horarios</h3>
+        <p>
+            Lunes a Domingo<br>
+            07:00am  – 22:30pm hrs
+        </p>
+    </div>
+
+    <!-- WHATSAPP -->
+    <div class="contacto-card">
+        <i class="fab fa-whatsapp contacto-icon"></i>
+        <h3>WhatsApp</h3>
+
+        <a 
+        href="https://wa.me/5212482501061"
+        target="_blank"
+        class="btn-contacto-whatsapp">
+
+        Escríbenos
+        </a>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="contacto-card">
+        <i class="fas fa-envelope contacto-icon"></i>
+        <h3>Email</h3>
+        <p>itatdavid@gmail.com</p>
+    </div>
+
+</div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
