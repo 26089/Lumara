@@ -59,13 +59,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
  // ================= CARRUSEL IMAGENES =================
 const images = [
-    "img/3luciernagas.webp",
-    "img/pulque.jpg",
+    "img/nanacamilpa1.png",
+    "img/luciernaga2026.jpg",
     "img/luciernaga.jpg",
     "img/monte.jpg",
-    "img/aguamiel.jpg",
+    "img/maguey.png",
     "img/lucierna.jpg",
-    "img/luciernagas.webp"
+    "img/camping.jpg"
 ];
 
 let index = 0;
