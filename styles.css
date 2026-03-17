@@ -420,6 +420,9 @@ section {
 }
 
 
+
+
+/*ventana modal */
 .modal{
     display:none;
     position:fixed;
@@ -716,15 +719,13 @@ header.scrolled .menu-toggle {
     grid-template-columns: 1.1fr 1.6fr;
     height: calc(100vh - 64px); /* debajo del nav */
     width: 100vw;
-    background: #36d14a;
+    background: #2e2e2e;
     position: relative;   /* clave para z-index de otros elementos */
     z-index: 1;           /* hero detrás de otros elementos */
     overflow: visible;    /* permite que imágenes sobresalgan */
     padding: 0 !important; 
     margin: 0;
 }
-
-
 
 
 
@@ -738,8 +739,6 @@ header.scrolled .menu-toggle {
     z-index: 2;
 }
 
-/* IMAGEN */
-/* ===== IMAGEN HERO ===== */
 
 
 
@@ -780,7 +779,7 @@ header.scrolled .menu-toggle {
 .hero-image::after {
     content: "";
     position: absolute;
-    inset: 0;               /* 👈 CLAVE */
+    inset: 0;               /*  CLAVE */
     width: 100%;
     height: 100%;
     background: radial-gradient(
@@ -797,7 +796,7 @@ header.scrolled .menu-toggle {
 /* ===== HERO MOBILE FIX ===== */
 
     .hero-image {
-        height: 65vh;              /* 👈 ESTO la hace visible */
+        height: 65vh;              /* ESTO la hace visible */
         min-height: 65vh;
         background-position: center;
     }
@@ -962,8 +961,8 @@ header.scrolled .menu-toggle {
 /* Botón */
 .hero-pro .btn-hero {
     display: inline-block;
-    margin-top: 30px;
-    padding: 14px 28px;
+    margin-top: 10px;
+    padding: 10px 24px;
     border-radius: 40px;
     background: linear-gradient(to right, #7ac943, #a7e14a);
     color: #0b2236;
@@ -972,7 +971,7 @@ header.scrolled .menu-toggle {
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     transition: transform .2s ease, box-shadow .2s ease;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
     animation: fadeUp 1s forwards;
     animation-delay: 0.8s;
 }
@@ -992,21 +991,32 @@ header.scrolled .menu-toggle {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
-    .hero-pro .hero-content {
-        text-align: center;
-        padding: 60px 32px;
-    }
 
-    .hero-pro .hero-content h1 {
-        font-size: clamp(2rem, 7vw, 3rem);
-    }
-
-    .hero-pro .hero-content p {
-        font-size: 1rem;
-    }
+.hero-pro .hero-content {
+    text-align: left;        /* 👈 izquierda */
+    padding: 60px 24px;      /* menos padding */
+    align-items: flex-start; /* 👈 alinea todo a la izquierda */
 }
 
-/* ganeria carrucel**/
+/* TÍTULO */
+.hero-pro .hero-content h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem); /* 👈 más pequeño */
+    line-height: 1.2;
+}
+
+/* TEXTO */
+.hero-pro .hero-content p {
+    font-size: 0.95rem;
+    max-width: 90%;
+}
+
+/* BOTÓN */
+.hero-pro .btn-hero {
+    align-self: flex-start; /* 👈 botón a la izquierda */
+}
+
+}
+
 
 /* ==================================================
    GALERÍA
@@ -1021,7 +1031,7 @@ header.scrolled .menu-toggle {
     overflow: visible; /* 👈 ahora las imágenes pueden sobresalir del hero */
     position: relative; /* asegura que z-index funcione si lo necesitas */
     z-index: 20;        /* opcional: para que las imágenes estén encima del hero */
-    margin-top: -75px;
+    margin-top: -69px;
     padding-top: 0;
     
 }
@@ -1128,27 +1138,6 @@ header.scrolled .menu-toggle {
 }
 
 /* ==================================================
-   FLECHA
-================================================== */
-.arrow {
-    margin-top: 20px;
-    width: 44px;
-    height: 44px;
-
-    background: #a7e14a;
-    color: #0b2236;
-
-    border-radius: 12px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 1.4rem;
-    font-weight: bold;
-}
-
-/* ==================================================
    MOBILE (TABLET Y TELÉFONO)
 ================================================== */
 @media (max-width: 768px) {
@@ -1213,12 +1202,6 @@ header.scrolled .menu-toggle {
         margin-bottom: 10px;
     }
 
-    /* FLECHA */
-    
-    .arrow {
-        margin-top: 16px;
-        align-self: center; /* centra flecha */
-    }
 }
 
 /* ===============================
@@ -1826,6 +1809,7 @@ box-shadow:0 0 20px rgba(244,208,138,.5);
     margin-bottom:10px;
     font-weight:600;
 }
+
 
 /* ===================================== */
 /* BOTÓN WHATSAPP */
